@@ -1,0 +1,1643 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 8
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_TemporalCoherenceThreshold: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 9
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVRFilteringMode: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &215397835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 215397836}
+  m_Layer: 0
+  m_Name: PlayerTwoSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &215397836
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 215397835}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 6, y: -3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 437266417}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!1 &259557844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 259557845}
+  m_Layer: 0
+  m_Name: PlayerTwoInPlay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &259557845
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 259557844}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 619597391}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &260284784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 260284785}
+  m_Layer: 0
+  m_Name: PlayerFourSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &260284785
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 260284784}
+  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
+  m_LocalPosition: {x: -6, y: 3, z: 0}
+  m_LocalScale: {x: 1.0000005, y: 1.0000005, z: 1}
+  m_Children: []
+  m_Father: {fileID: 437266417}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
+--- !u!1 &375043946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 375043947}
+  m_Layer: 0
+  m_Name: PlayerFourInPlay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &375043947
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 375043946}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000005, y: 1.0000005, z: 1}
+  m_Children: []
+  m_Father: {fileID: 619597391}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &400698374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 400698375}
+  m_Layer: 0
+  m_Name: PlayerOneSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400698375
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 400698374}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4, y: -4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 437266417}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &437266416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 437266417}
+  m_Layer: 0
+  m_Name: PlayerCardSpawns
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &437266417
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 437266416}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400698375}
+  - {fileID: 215397836}
+  - {fileID: 1157541758}
+  - {fileID: 260284785}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &619597390
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 619597391}
+  m_Layer: 0
+  m_Name: PlayerCardInPlay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &619597391
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 619597390}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1504852556}
+  - {fileID: 259557845}
+  - {fileID: 1364761554}
+  - {fileID: 375043947}
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &825785100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 825785102}
+  - component: {fileID: 825785101}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &825785101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 825785100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b51a5705e053c504ab76f1f3110d4d5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cards:
+  - Name: Two of Clubs
+    CardFace: {fileID: 21300000, guid: 2983e72e68ae2914bb326b1b6caa5bdf, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 3
+    CardNumber: 1
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 0
+  - Name: Three of Clubs
+    CardFace: {fileID: 21300000, guid: 7b340da6cab0b0e468aa2d2c9d7b65f8, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 3
+    CardNumber: 2
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 1
+  - Name: Four of Clubs
+    CardFace: {fileID: 21300000, guid: bbb54d33014681443a743942d5990ca0, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 3
+    CardNumber: 3
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 2
+  - Name: Five of Clubs
+    CardFace: {fileID: 21300000, guid: 651aeed9ac5962c4ea7e0ed0098c496a, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 3
+    CardNumber: 4
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 3
+  - Name: Six of Clubs
+    CardFace: {fileID: 21300000, guid: 91ff90c2512de534782588acf6bb0e8e, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 3
+    CardNumber: 5
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 4
+  - Name: Seven of Clubs
+    CardFace: {fileID: 21300000, guid: a5b989ba0b231554282658588dcff3ba, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 3
+    CardNumber: 6
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 5
+  - Name: Eight of Clubs
+    CardFace: {fileID: 21300000, guid: b2daf9a2556a6314483e3bb592566dc4, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 3
+    CardNumber: 7
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 6
+  - Name: Nine of Clubs
+    CardFace: {fileID: 21300000, guid: af4adf7c3527f9747b913c3d09caced0, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 3
+    CardNumber: 8
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 7
+  - Name: Ten of Clubs
+    CardFace: {fileID: 21300000, guid: 4572a46c20268bb4ab62a50e2477bdd8, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 3
+    CardNumber: 9
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 8
+  - Name: Jack of Clubs
+    CardFace: {fileID: 21300000, guid: f63fd4e6fc483de49b0ee9c27114185d, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 3
+    CardNumber: 10
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 9
+  - Name: Queen of Clubs
+    CardFace: {fileID: 21300000, guid: d64f8dfb863145844b579698d6c680c8, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 3
+    CardNumber: 11
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 10
+  - Name: King of Clubs
+    CardFace: {fileID: 21300000, guid: c99b38f2caeebf3438dd96a5de675dff, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 3
+    CardNumber: 12
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 11
+  - Name: Ace of Clubs
+    CardFace: {fileID: 21300000, guid: 6dab5afb34fa86f418ce2846f84265f1, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 3
+    CardNumber: 13
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 12
+  - Name: Two of Diamonds
+    CardFace: {fileID: 21300000, guid: 01413d4a2a6370a49837113215f62b11, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 1
+    CardNumber: 1
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 13
+  - Name: Three of Diamonds
+    CardFace: {fileID: 21300000, guid: 37f8fb85dfd796e458987c00083b3534, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 1
+    CardNumber: 2
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 14
+  - Name: Four of Diamonds
+    CardFace: {fileID: 21300000, guid: 9b2ac8367f3c77342945207cfb287374, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 1
+    CardNumber: 3
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 15
+  - Name: Five of Diamonds
+    CardFace: {fileID: 21300000, guid: 946e41b25f403884fb088cdfb61ffeae, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 1
+    CardNumber: 4
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 16
+  - Name: Six of Diamonds
+    CardFace: {fileID: 21300000, guid: 34fcf7b337d5563439825e30bd81cead, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 1
+    CardNumber: 5
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 17
+  - Name: Seven of Diamonds
+    CardFace: {fileID: 21300000, guid: c40041bd69a16a04aaea7adb0852a6c6, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 1
+    CardNumber: 6
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 18
+  - Name: Eight of Diamonds
+    CardFace: {fileID: 21300000, guid: 8fdae77b12d430a49896f6fee9fd460f, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 1
+    CardNumber: 7
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 19
+  - Name: Nine of Diamonds
+    CardFace: {fileID: 21300000, guid: 2e7feea0064be304a9a960468c8ae30f, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 1
+    CardNumber: 8
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 20
+  - Name: Ten of Diamonds
+    CardFace: {fileID: 21300000, guid: 13641338a013a964689779ea97c22985, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 1
+    CardNumber: 9
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 21
+  - Name: Jack of Diamonds
+    CardFace: {fileID: 21300000, guid: 321f667801fbd1e4584747af210348c3, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 1
+    CardNumber: 10
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 22
+  - Name: Queen of Diamonds
+    CardFace: {fileID: 21300000, guid: be3aeb99c5f9c024182feedc56aa4822, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 1
+    CardNumber: 11
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 23
+  - Name: King of Diamonds
+    CardFace: {fileID: 21300000, guid: 638bdeeda5d4244469c2b2feedb8de72, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 1
+    CardNumber: 12
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 24
+  - Name: Ace of Diamonds
+    CardFace: {fileID: 21300000, guid: e477b5274f074d04c9a2376dadc5a2d9, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 1
+    CardNumber: 13
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 25
+  - Name: Two of Spades
+    CardFace: {fileID: 21300000, guid: 79e2120a7c443ca4999fdbd25dadb67d, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 2
+    CardNumber: 1
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 26
+  - Name: Three of Spades
+    CardFace: {fileID: 21300000, guid: c346ddfd73c552b4191dc4e4f3ed8e4c, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 2
+    CardNumber: 2
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 27
+  - Name: Four of Spades
+    CardFace: {fileID: 21300000, guid: 6cb4c7664295d434a88ff905b60c3081, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 2
+    CardNumber: 3
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 28
+  - Name: Five of Spades
+    CardFace: {fileID: 21300000, guid: e0481735da64f4847915ab1fb420368c, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 2
+    CardNumber: 4
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 29
+  - Name: Six of Spades
+    CardFace: {fileID: 21300000, guid: aae276d412af35145bec2ed008f12849, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 2
+    CardNumber: 5
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 30
+  - Name: Seven of Spades
+    CardFace: {fileID: 21300000, guid: 55249eaeace378c469b669a427009ee8, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 2
+    CardNumber: 6
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 31
+  - Name: Eight of Spades
+    CardFace: {fileID: 21300000, guid: 1f8f5cb1c8ad7844bb73be9c8ec35bec, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 2
+    CardNumber: 7
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 32
+  - Name: Nine of Spades
+    CardFace: {fileID: 21300000, guid: 5541955a549eece4a951acac58d9c6c8, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 2
+    CardNumber: 8
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 33
+  - Name: Ten of Spades
+    CardFace: {fileID: 21300000, guid: 1a0740e7b3f05484bb8e2b44b491b220, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 2
+    CardNumber: 9
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 34
+  - Name: Jack of Spades
+    CardFace: {fileID: 21300000, guid: 3093baadc979253479a6a67a2ff10e36, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 2
+    CardNumber: 10
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 35
+  - Name: Queen of Spades
+    CardFace: {fileID: 21300000, guid: bf31495b7c63c74428dfa591cba7806d, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 13
+    Suit: 2
+    CardNumber: 11
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 36
+  - Name: King of Spades
+    CardFace: {fileID: 21300000, guid: 6b786ab341991a44f8e2c524aadf08fe, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 2
+    CardNumber: 12
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 37
+  - Name: Ace of Spades
+    CardFace: {fileID: 21300000, guid: 7027fc017a6df4442a22ef14d7860ac7, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 2
+    CardNumber: 13
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 38
+  - Name: Two of Hearts
+    CardFace: {fileID: 21300000, guid: 5f7f169abd453624dbf73ed29df7af40, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 1
+    Suit: 0
+    CardNumber: 1
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 39
+  - Name: Three of Hearts
+    CardFace: {fileID: 21300000, guid: 335d22616f9312c49aa5dfb49631b3d0, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 1
+    Suit: 0
+    CardNumber: 2
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 40
+  - Name: Four of Hearts
+    CardFace: {fileID: 21300000, guid: f46824640dbd59e439cb9c202aa5f9ea, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 1
+    Suit: 0
+    CardNumber: 3
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 41
+  - Name: Five of Hearts
+    CardFace: {fileID: 21300000, guid: 71feeb6938f8f984a8de78e7abcf9817, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 1
+    Suit: 0
+    CardNumber: 4
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 42
+  - Name: Six of Hearts
+    CardFace: {fileID: 21300000, guid: fc1ab4ae20eaa1246be9e83a109fc98b, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 1
+    Suit: 0
+    CardNumber: 5
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 43
+  - Name: Seven of Hearts
+    CardFace: {fileID: 21300000, guid: 4d2a2e6a0394592459bfa08fb11e8d54, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 1
+    Suit: 0
+    CardNumber: 6
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 44
+  - Name: Eight of Hearts
+    CardFace: {fileID: 21300000, guid: c66001a73ac30e946bc3cd5bf9b709d6, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 1
+    Suit: 0
+    CardNumber: 7
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 45
+  - Name: Nine of Hearts
+    CardFace: {fileID: 21300000, guid: 34a8b11ba2c5c4742aa17fc1dce17cc0, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 1
+    Suit: 0
+    CardNumber: 8
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 46
+  - Name: Ten of Hearts
+    CardFace: {fileID: 21300000, guid: 080efb68a88a2f94186d76003eea84a2, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 1
+    Suit: 0
+    CardNumber: 9
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 47
+  - Name: Jack of Hearts
+    CardFace: {fileID: 21300000, guid: 5e595f57bf5c2474b9121a00d0e315d7, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 1
+    Suit: 0
+    CardNumber: 10
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 48
+  - Name: Queen of Hearts
+    CardFace: {fileID: 21300000, guid: cdf5faf75bc2c3f4a8e4fb1ddaf46336, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 1
+    Suit: 0
+    CardNumber: 11
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 49
+  - Name: King of Hearts
+    CardFace: {fileID: 21300000, guid: e478b8e4eabdad149b32cc88fa73ffed, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 1
+    Suit: 0
+    CardNumber: 12
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 50
+  - Name: Aceof Hearts
+    CardFace: {fileID: 21300000, guid: ec0e7bfcffddb82419cfa4ad595ae255, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 1
+    Suit: 0
+    CardNumber: 13
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 51
+  CardHolder: {fileID: 1244058120}
+  NumberOfCards: 52
+  CurrentPlayer: 0
+  currentRound: 0
+  Players:
+  - PlayerName: Player One
+    Cards:
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    Score: 0
+    CardSpawn: {fileID: 400698375}
+    CardInPlay: {fileID: 1504852556}
+    ScoredCards: []
+    OffsetPerCard: {x: 0.5, y: 0, z: 0}
+    SelectedCardOffset: {x: 0, y: 0.2, z: 0}
+  - PlayerName: Player Two
+    Cards:
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    Score: 0
+    CardSpawn: {fileID: 215397836}
+    CardInPlay: {fileID: 259557845}
+    ScoredCards: []
+    OffsetPerCard: {x: 0, y: 0.5, z: 0}
+    SelectedCardOffset: {x: -0.2, y: 0, z: 0}
+  - PlayerName: Player Three
+    Cards:
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    Score: 0
+    CardSpawn: {fileID: 1157541758}
+    CardInPlay: {fileID: 1364761554}
+    ScoredCards: []
+    OffsetPerCard: {x: -0.5, y: 0, z: 0}
+    SelectedCardOffset: {x: 0, y: -0.2, z: 0}
+  - PlayerName: Player Four
+    Cards:
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    - Name: 
+      CardFace: {fileID: 0}
+      CardBack: {fileID: 0}
+      ScoreValue: 0
+      Suit: 0
+      CardNumber: 0
+      PlayerId: 0
+      Selected: 0
+      card_state: 0
+      CardId: 0
+    Score: 0
+    CardSpawn: {fileID: 260284785}
+    CardInPlay: {fileID: 375043947}
+    ScoredCards: []
+    OffsetPerCard: {x: 0, y: -0.5, z: 0}
+    SelectedCardOffset: {x: 0.2, y: 0, z: 0}
+  GameState: 0
+--- !u!4 &825785102
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 825785100}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1157541757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1157541758}
+  m_Layer: 0
+  m_Name: PlayerThreeSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1157541758
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1157541757}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 4, y: 4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 437266417}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!1 &1244058119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1244058120}
+  - component: {fileID: 1244058121}
+  m_Layer: 0
+  m_Name: CardHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1244058120
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1244058119}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1244058121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1244058119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 876f40146331e164ea55cef3ce77ca45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1364761553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1364761554}
+  m_Layer: 0
+  m_Name: PlayerThreeInPlay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1364761554
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1364761553}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 619597391}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1504852555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1504852556}
+  m_Layer: 0
+  m_Name: PlayerOneInPlay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1504852556
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1504852555}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 619597391}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1569183387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1569183391}
+  - component: {fileID: 1569183390}
+  - component: {fileID: 1569183389}
+  - component: {fileID: 1569183388}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1569183388
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1569183387}
+  m_Enabled: 1
+--- !u!124 &1569183389
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1569183387}
+  m_Enabled: 1
+--- !u!20 &1569183390
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1569183387}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.21498625, g: 0.5294118, b: 0.15570934, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1569183391
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1569183387}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
