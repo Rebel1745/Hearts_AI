@@ -350,303 +350,322 @@ MonoBehaviour:
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 3
-    CardNumber: 1
+    CardNumber: 2
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 0
+    isLegal: 0
   - Name: Three of Clubs
     CardFace: {fileID: 21300000, guid: 7b340da6cab0b0e468aa2d2c9d7b65f8, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 3
-    CardNumber: 2
+    CardNumber: 3
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 1
+    isLegal: 0
   - Name: Four of Clubs
     CardFace: {fileID: 21300000, guid: bbb54d33014681443a743942d5990ca0, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 3
-    CardNumber: 3
+    CardNumber: 4
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 2
+    isLegal: 0
   - Name: Five of Clubs
     CardFace: {fileID: 21300000, guid: 651aeed9ac5962c4ea7e0ed0098c496a, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 3
-    CardNumber: 4
+    CardNumber: 5
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 3
+    isLegal: 0
   - Name: Six of Clubs
     CardFace: {fileID: 21300000, guid: 91ff90c2512de534782588acf6bb0e8e, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 3
-    CardNumber: 5
+    CardNumber: 6
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 4
+    isLegal: 0
   - Name: Seven of Clubs
     CardFace: {fileID: 21300000, guid: a5b989ba0b231554282658588dcff3ba, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 3
-    CardNumber: 6
+    CardNumber: 7
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 5
+    isLegal: 0
   - Name: Eight of Clubs
     CardFace: {fileID: 21300000, guid: b2daf9a2556a6314483e3bb592566dc4, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 3
-    CardNumber: 7
+    CardNumber: 8
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 6
+    isLegal: 0
   - Name: Nine of Clubs
     CardFace: {fileID: 21300000, guid: af4adf7c3527f9747b913c3d09caced0, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 3
-    CardNumber: 8
+    CardNumber: 9
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 7
+    isLegal: 0
   - Name: Ten of Clubs
     CardFace: {fileID: 21300000, guid: 4572a46c20268bb4ab62a50e2477bdd8, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 3
-    CardNumber: 9
+    CardNumber: 10
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 8
+    isLegal: 0
   - Name: Jack of Clubs
     CardFace: {fileID: 21300000, guid: f63fd4e6fc483de49b0ee9c27114185d, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 3
-    CardNumber: 10
+    CardNumber: 11
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 9
+    isLegal: 0
   - Name: Queen of Clubs
     CardFace: {fileID: 21300000, guid: d64f8dfb863145844b579698d6c680c8, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 3
-    CardNumber: 11
+    CardNumber: 12
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 10
+    isLegal: 0
   - Name: King of Clubs
     CardFace: {fileID: 21300000, guid: c99b38f2caeebf3438dd96a5de675dff, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 3
-    CardNumber: 12
+    CardNumber: 13
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 11
+    isLegal: 0
   - Name: Ace of Clubs
     CardFace: {fileID: 21300000, guid: 6dab5afb34fa86f418ce2846f84265f1, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 3
-    CardNumber: 13
+    CardNumber: 14
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 12
+    isLegal: 0
   - Name: Two of Diamonds
     CardFace: {fileID: 21300000, guid: 01413d4a2a6370a49837113215f62b11, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 1
-    CardNumber: 1
+    CardNumber: 2
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 13
+    isLegal: 0
   - Name: Three of Diamonds
     CardFace: {fileID: 21300000, guid: 37f8fb85dfd796e458987c00083b3534, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 1
-    CardNumber: 2
+    CardNumber: 3
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 14
+    isLegal: 0
   - Name: Four of Diamonds
     CardFace: {fileID: 21300000, guid: 9b2ac8367f3c77342945207cfb287374, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 1
-    CardNumber: 3
+    CardNumber: 4
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 15
+    isLegal: 0
   - Name: Five of Diamonds
     CardFace: {fileID: 21300000, guid: 946e41b25f403884fb088cdfb61ffeae, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 1
-    CardNumber: 4
+    CardNumber: 5
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 16
+    isLegal: 0
   - Name: Six of Diamonds
     CardFace: {fileID: 21300000, guid: 34fcf7b337d5563439825e30bd81cead, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 1
-    CardNumber: 5
+    CardNumber: 6
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 17
+    isLegal: 0
   - Name: Seven of Diamonds
     CardFace: {fileID: 21300000, guid: c40041bd69a16a04aaea7adb0852a6c6, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 1
-    CardNumber: 6
+    CardNumber: 7
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 18
+    isLegal: 0
   - Name: Eight of Diamonds
     CardFace: {fileID: 21300000, guid: 8fdae77b12d430a49896f6fee9fd460f, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 1
-    CardNumber: 7
+    CardNumber: 8
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 19
+    isLegal: 0
   - Name: Nine of Diamonds
     CardFace: {fileID: 21300000, guid: 2e7feea0064be304a9a960468c8ae30f, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 1
-    CardNumber: 8
+    CardNumber: 9
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 20
+    isLegal: 0
   - Name: Ten of Diamonds
     CardFace: {fileID: 21300000, guid: 13641338a013a964689779ea97c22985, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 1
-    CardNumber: 9
+    CardNumber: 10
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 21
+    isLegal: 0
   - Name: Jack of Diamonds
     CardFace: {fileID: 21300000, guid: 321f667801fbd1e4584747af210348c3, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 1
-    CardNumber: 10
+    CardNumber: 11
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 22
+    isLegal: 0
   - Name: Queen of Diamonds
     CardFace: {fileID: 21300000, guid: be3aeb99c5f9c024182feedc56aa4822, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 1
-    CardNumber: 11
+    CardNumber: 12
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 23
+    isLegal: 0
   - Name: King of Diamonds
     CardFace: {fileID: 21300000, guid: 638bdeeda5d4244469c2b2feedb8de72, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 1
-    CardNumber: 12
+    CardNumber: 13
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 24
+    isLegal: 0
   - Name: Ace of Diamonds
     CardFace: {fileID: 21300000, guid: e477b5274f074d04c9a2376dadc5a2d9, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 1
-    CardNumber: 13
+    CardNumber: 14
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 25
+    isLegal: 0
   - Name: Two of Spades
     CardFace: {fileID: 21300000, guid: 79e2120a7c443ca4999fdbd25dadb67d, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 2
-    CardNumber: 1
+    CardNumber: 2
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 26
+    isLegal: 0
   - Name: Three of Spades
     CardFace: {fileID: 21300000, guid: c346ddfd73c552b4191dc4e4f3ed8e4c, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 2
-    CardNumber: 2
+    CardNumber: 3
     PlayerId: 0
     Selected: 0
     card_state: 0
     CardId: 27
+    isLegal: 0
   - Name: Four of Spades
     CardFace: {fileID: 21300000, guid: 6cb4c7664295d434a88ff905b60c3081, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 2
-    CardNumber: 3
-    PlayerId: 0
-    Selected: 0
-    card_state: 0
-    CardId: 28
-  - Name: Five of Spades
-    CardFace: {fileID: 21300000, guid: e0481735da64f4847915ab1fb420368c, type: 3}
-    CardBack: {fileID: 0}
-    ScoreValue: 0
-    Suit: 2
     CardNumber: 4
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 29
-  - Name: Six of Spades
-    CardFace: {fileID: 21300000, guid: aae276d412af35145bec2ed008f12849, type: 3}
+    CardId: 28
+    isLegal: 0
+  - Name: Five of Spades
+    CardFace: {fileID: 21300000, guid: e0481735da64f4847915ab1fb420368c, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 2
@@ -654,9 +673,10 @@ MonoBehaviour:
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 30
-  - Name: Seven of Spades
-    CardFace: {fileID: 21300000, guid: 55249eaeace378c469b669a427009ee8, type: 3}
+    CardId: 29
+    isLegal: 0
+  - Name: Six of Spades
+    CardFace: {fileID: 21300000, guid: aae276d412af35145bec2ed008f12849, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 2
@@ -664,9 +684,10 @@ MonoBehaviour:
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 31
-  - Name: Eight of Spades
-    CardFace: {fileID: 21300000, guid: 1f8f5cb1c8ad7844bb73be9c8ec35bec, type: 3}
+    CardId: 30
+    isLegal: 0
+  - Name: Seven of Spades
+    CardFace: {fileID: 21300000, guid: 55249eaeace378c469b669a427009ee8, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 2
@@ -674,9 +695,10 @@ MonoBehaviour:
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 32
-  - Name: Nine of Spades
-    CardFace: {fileID: 21300000, guid: 5541955a549eece4a951acac58d9c6c8, type: 3}
+    CardId: 31
+    isLegal: 0
+  - Name: Eight of Spades
+    CardFace: {fileID: 21300000, guid: 1f8f5cb1c8ad7844bb73be9c8ec35bec, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 2
@@ -684,9 +706,10 @@ MonoBehaviour:
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 33
-  - Name: Ten of Spades
-    CardFace: {fileID: 21300000, guid: 1a0740e7b3f05484bb8e2b44b491b220, type: 3}
+    CardId: 32
+    isLegal: 0
+  - Name: Nine of Spades
+    CardFace: {fileID: 21300000, guid: 5541955a549eece4a951acac58d9c6c8, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 2
@@ -694,9 +717,10 @@ MonoBehaviour:
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 34
-  - Name: Jack of Spades
-    CardFace: {fileID: 21300000, guid: 3093baadc979253479a6a67a2ff10e36, type: 3}
+    CardId: 33
+    isLegal: 0
+  - Name: Ten of Spades
+    CardFace: {fileID: 21300000, guid: 1a0740e7b3f05484bb8e2b44b491b220, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 2
@@ -704,29 +728,32 @@ MonoBehaviour:
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 35
-  - Name: Queen of Spades
-    CardFace: {fileID: 21300000, guid: bf31495b7c63c74428dfa591cba7806d, type: 3}
+    CardId: 34
+    isLegal: 0
+  - Name: Jack of Spades
+    CardFace: {fileID: 21300000, guid: 3093baadc979253479a6a67a2ff10e36, type: 3}
     CardBack: {fileID: 0}
-    ScoreValue: 13
+    ScoreValue: 0
     Suit: 2
     CardNumber: 11
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 36
-  - Name: King of Spades
-    CardFace: {fileID: 21300000, guid: 6b786ab341991a44f8e2c524aadf08fe, type: 3}
+    CardId: 35
+    isLegal: 0
+  - Name: Queen of Spades
+    CardFace: {fileID: 21300000, guid: bf31495b7c63c74428dfa591cba7806d, type: 3}
     CardBack: {fileID: 0}
-    ScoreValue: 0
+    ScoreValue: 13
     Suit: 2
     CardNumber: 12
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 37
-  - Name: Ace of Spades
-    CardFace: {fileID: 21300000, guid: 7027fc017a6df4442a22ef14d7860ac7, type: 3}
+    CardId: 36
+    isLegal: 0
+  - Name: King of Spades
+    CardFace: {fileID: 21300000, guid: 6b786ab341991a44f8e2c524aadf08fe, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 0
     Suit: 2
@@ -734,19 +761,21 @@ MonoBehaviour:
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 38
-  - Name: Two of Hearts
-    CardFace: {fileID: 21300000, guid: 5f7f169abd453624dbf73ed29df7af40, type: 3}
+    CardId: 37
+    isLegal: 0
+  - Name: Ace of Spades
+    CardFace: {fileID: 21300000, guid: 7027fc017a6df4442a22ef14d7860ac7, type: 3}
     CardBack: {fileID: 0}
-    ScoreValue: 1
-    Suit: 0
-    CardNumber: 1
+    ScoreValue: 0
+    Suit: 2
+    CardNumber: 14
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 39
-  - Name: Three of Hearts
-    CardFace: {fileID: 21300000, guid: 335d22616f9312c49aa5dfb49631b3d0, type: 3}
+    CardId: 38
+    isLegal: 0
+  - Name: Two of Hearts
+    CardFace: {fileID: 21300000, guid: 5f7f169abd453624dbf73ed29df7af40, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 1
     Suit: 0
@@ -754,9 +783,10 @@ MonoBehaviour:
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 40
-  - Name: Four of Hearts
-    CardFace: {fileID: 21300000, guid: f46824640dbd59e439cb9c202aa5f9ea, type: 3}
+    CardId: 39
+    isLegal: 0
+  - Name: Three of Hearts
+    CardFace: {fileID: 21300000, guid: 335d22616f9312c49aa5dfb49631b3d0, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 1
     Suit: 0
@@ -764,9 +794,10 @@ MonoBehaviour:
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 41
-  - Name: Five of Hearts
-    CardFace: {fileID: 21300000, guid: 71feeb6938f8f984a8de78e7abcf9817, type: 3}
+    CardId: 40
+    isLegal: 0
+  - Name: Four of Hearts
+    CardFace: {fileID: 21300000, guid: f46824640dbd59e439cb9c202aa5f9ea, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 1
     Suit: 0
@@ -774,9 +805,10 @@ MonoBehaviour:
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 42
-  - Name: Six of Hearts
-    CardFace: {fileID: 21300000, guid: fc1ab4ae20eaa1246be9e83a109fc98b, type: 3}
+    CardId: 41
+    isLegal: 0
+  - Name: Five of Hearts
+    CardFace: {fileID: 21300000, guid: 71feeb6938f8f984a8de78e7abcf9817, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 1
     Suit: 0
@@ -784,9 +816,10 @@ MonoBehaviour:
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 43
-  - Name: Seven of Hearts
-    CardFace: {fileID: 21300000, guid: 4d2a2e6a0394592459bfa08fb11e8d54, type: 3}
+    CardId: 42
+    isLegal: 0
+  - Name: Six of Hearts
+    CardFace: {fileID: 21300000, guid: fc1ab4ae20eaa1246be9e83a109fc98b, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 1
     Suit: 0
@@ -794,9 +827,10 @@ MonoBehaviour:
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 44
-  - Name: Eight of Hearts
-    CardFace: {fileID: 21300000, guid: c66001a73ac30e946bc3cd5bf9b709d6, type: 3}
+    CardId: 43
+    isLegal: 0
+  - Name: Seven of Hearts
+    CardFace: {fileID: 21300000, guid: 4d2a2e6a0394592459bfa08fb11e8d54, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 1
     Suit: 0
@@ -804,9 +838,10 @@ MonoBehaviour:
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 45
-  - Name: Nine of Hearts
-    CardFace: {fileID: 21300000, guid: 34a8b11ba2c5c4742aa17fc1dce17cc0, type: 3}
+    CardId: 44
+    isLegal: 0
+  - Name: Eight of Hearts
+    CardFace: {fileID: 21300000, guid: c66001a73ac30e946bc3cd5bf9b709d6, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 1
     Suit: 0
@@ -814,9 +849,10 @@ MonoBehaviour:
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 46
-  - Name: Ten of Hearts
-    CardFace: {fileID: 21300000, guid: 080efb68a88a2f94186d76003eea84a2, type: 3}
+    CardId: 45
+    isLegal: 0
+  - Name: Nine of Hearts
+    CardFace: {fileID: 21300000, guid: 34a8b11ba2c5c4742aa17fc1dce17cc0, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 1
     Suit: 0
@@ -824,9 +860,10 @@ MonoBehaviour:
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 47
-  - Name: Jack of Hearts
-    CardFace: {fileID: 21300000, guid: 5e595f57bf5c2474b9121a00d0e315d7, type: 3}
+    CardId: 46
+    isLegal: 0
+  - Name: Ten of Hearts
+    CardFace: {fileID: 21300000, guid: 080efb68a88a2f94186d76003eea84a2, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 1
     Suit: 0
@@ -834,9 +871,10 @@ MonoBehaviour:
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 48
-  - Name: Queen of Hearts
-    CardFace: {fileID: 21300000, guid: cdf5faf75bc2c3f4a8e4fb1ddaf46336, type: 3}
+    CardId: 47
+    isLegal: 0
+  - Name: Jack of Hearts
+    CardFace: {fileID: 21300000, guid: 5e595f57bf5c2474b9121a00d0e315d7, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 1
     Suit: 0
@@ -844,9 +882,10 @@ MonoBehaviour:
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 49
-  - Name: King of Hearts
-    CardFace: {fileID: 21300000, guid: e478b8e4eabdad149b32cc88fa73ffed, type: 3}
+    CardId: 48
+    isLegal: 0
+  - Name: Queen of Hearts
+    CardFace: {fileID: 21300000, guid: cdf5faf75bc2c3f4a8e4fb1ddaf46336, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 1
     Suit: 0
@@ -854,9 +893,10 @@ MonoBehaviour:
     PlayerId: 0
     Selected: 0
     card_state: 0
-    CardId: 50
-  - Name: Aceof Hearts
-    CardFace: {fileID: 21300000, guid: ec0e7bfcffddb82419cfa4ad595ae255, type: 3}
+    CardId: 49
+    isLegal: 0
+  - Name: King of Hearts
+    CardFace: {fileID: 21300000, guid: e478b8e4eabdad149b32cc88fa73ffed, type: 3}
     CardBack: {fileID: 0}
     ScoreValue: 1
     Suit: 0
@@ -864,10 +904,23 @@ MonoBehaviour:
     PlayerId: 0
     Selected: 0
     card_state: 0
+    CardId: 50
+    isLegal: 0
+  - Name: Aceof Hearts
+    CardFace: {fileID: 21300000, guid: ec0e7bfcffddb82419cfa4ad595ae255, type: 3}
+    CardBack: {fileID: 0}
+    ScoreValue: 1
+    Suit: 0
+    CardNumber: 14
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
     CardId: 51
+    isLegal: 0
   CardHolder: {fileID: 1244058120}
-  NumberOfCards: 52
   CurrentPlayer: 0
+  currentTrick: 0
+  currentHand: 0
   currentRound: 0
   Players:
   - PlayerName: Player One
@@ -882,6 +935,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -892,6 +946,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -902,6 +957,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -912,6 +968,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -922,6 +979,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -932,6 +990,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -942,6 +1001,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -952,6 +1012,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -962,6 +1023,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -972,6 +1034,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -982,6 +1045,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -992,6 +1056,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1002,6 +1067,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     Score: 0
     CardSpawn: {fileID: 400698375}
     CardInPlay: {fileID: 1504852556}
@@ -1020,6 +1086,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1030,6 +1097,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1040,6 +1108,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1050,6 +1119,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1060,6 +1130,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1070,6 +1141,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1080,6 +1152,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1090,6 +1163,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1100,6 +1174,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1110,6 +1185,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1120,6 +1196,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1130,6 +1207,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1140,6 +1218,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     Score: 0
     CardSpawn: {fileID: 215397836}
     CardInPlay: {fileID: 259557845}
@@ -1158,6 +1237,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1168,6 +1248,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1178,6 +1259,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1188,6 +1270,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1198,6 +1281,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1208,6 +1292,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1218,6 +1303,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1228,6 +1314,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1238,6 +1325,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1248,6 +1336,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1258,6 +1347,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1268,6 +1358,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1278,6 +1369,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     Score: 0
     CardSpawn: {fileID: 1157541758}
     CardInPlay: {fileID: 1364761554}
@@ -1296,6 +1388,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1306,6 +1399,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1316,6 +1410,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1326,6 +1421,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1336,6 +1432,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1346,6 +1443,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1356,6 +1454,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1366,6 +1465,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1376,6 +1476,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1386,6 +1487,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1396,6 +1498,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1406,6 +1509,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     - Name: 
       CardFace: {fileID: 0}
       CardBack: {fileID: 0}
@@ -1416,6 +1520,7 @@ MonoBehaviour:
       Selected: 0
       card_state: 0
       CardId: 0
+      isLegal: 0
     Score: 0
     CardSpawn: {fileID: 260284785}
     CardInPlay: {fileID: 375043947}
@@ -1423,6 +1528,57 @@ MonoBehaviour:
     OffsetPerCard: {x: 0, y: -0.5, z: 0}
     SelectedCardOffset: {x: 0.2, y: 0, z: 0}
   GameState: 0
+  trickCards:
+  - Name: 
+    CardFace: {fileID: 0}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 0
+    CardNumber: 0
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 0
+    isLegal: 0
+  - Name: 
+    CardFace: {fileID: 0}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 0
+    CardNumber: 0
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 0
+    isLegal: 0
+  - Name: 
+    CardFace: {fileID: 0}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 0
+    CardNumber: 0
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 0
+    isLegal: 0
+  - Name: 
+    CardFace: {fileID: 0}
+    CardBack: {fileID: 0}
+    ScoreValue: 0
+    Suit: 0
+    CardNumber: 0
+    PlayerId: 0
+    Selected: 0
+    card_state: 0
+    CardId: 0
+    isLegal: 0
+  startingSuit: 0
+  startingValue: 0
+  startingPlayer: 0
+  firstTrick: 1
+  heartsBroken: 0
+  CurrentPlaceInTrick: 1
 --- !u!4 &825785102
 Transform:
   m_ObjectHideFlags: 0

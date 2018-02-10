@@ -3,27 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
+public enum SUIT { HEARTS, DIAMONDS, SPADES, CLUBS };
+
 public class GameManager : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
         GameObjectToCard = new Dictionary<GameObject, Card>();
         CardToGameObject = new Dictionary<Card, GameObject>();
-        ShuffleCards(Cards);
-        DealCards();
-        SortPlayerCards();
-        DisplayCards();
-        GetStartingPlayer();
+        SetupRound();
 	}
 
     public Card[] Cards;
     private Card[] shuffledCards;
     public Transform CardHolder;
-    public int NumberOfCards = 52;
     public int CurrentPlayer = 0;
-    int totalRounds = 4;
-    public int currentRound = 0;
-    public int currentHand = 0;
+    public int currentTrick = 0; // each set of four cards is called a trick (max no. = no. of cards per player)
+    public int currentHand = 0; // each set of 13 cards is called a hand
+    public int currentRound = 0; // rounds are played until a player score reaches or exceded 100
 
     public Player[] Players;
 
@@ -33,6 +30,29 @@ public class GameManager : MonoBehaviour {
     public Dictionary<GameObject, Card> GameObjectToCard;
     public Dictionary<Card, GameObject> CardToGameObject;
 
+    // Per-trick variables
+    public Card[] trickCards = new Card[4];
+    public SUIT startingSuit;
+    public int startingValue;
+    public int startingPlayer;
+    public bool firstTrick = true;
+    public bool heartsBroken = false;
+    // whether 1st, 2nd, 3rd or 4th card to be placed
+    public int CurrentPlaceInTrick = 1;
+
+    void SetupRound()
+    {
+        ShuffleCards(Cards);
+        DealCards();
+        SortPlayerCards();
+        DisplayCards();
+        currentTrick = 0;
+        currentHand = 0;
+        firstTrick = true;
+        heartsBroken = false;
+        CurrentPlaceInTrick = 1;
+        GetStartingPlayer();
+    }
 
     void GetStartingPlayer()
     {
@@ -41,28 +61,62 @@ public class GameManager : MonoBehaviour {
             if (c.IsTwoOfClubs())
             {
                 CurrentPlayer = c.PlayerId;
+                c.isLegal = true;
             }
         }
+        Debug.Log("Starting Player: " + Players[CurrentPlayer].PlayerName);
     }
 
-    void NextTurn()
+    // next trick is called 13 times before a new hand is dealt
+    void NextTrick()
     {
-        Debug.Log("NextTurn()");
-        CurrentPlayer = 0;
-        currentHand = 0;
+        ScoreCards();
+        currentTrick++;
+        firstTrick = false;
+        CurrentPlaceInTrick = 1;
+        Players[CurrentPlayer].GetLegalMoves(firstTrick, heartsBroken, startingSuit, CurrentPlaceInTrick);
+    }
+
+    void ScoreCards()
+    {
+        int trickWinner = startingPlayer;
+        int currentHighestCard = startingValue;
+
+        foreach(Card c in trickCards)
+        {
+            if(c.Suit == startingSuit && c.CardNumber > currentHighestCard)
+            {
+                trickWinner = c.PlayerId;
+                currentHighestCard = c.CardNumber;
+            }
+        }
+
+        Debug.Log("Trick Won by: " + Players[trickWinner].PlayerName);
+        foreach (Card c in trickCards)
+        {
+            Players[trickWinner].ScoredCards.Add(c);
+            Players[trickWinner].Score += c.ScoreValue;
+            c.card_state = Card.CARD_STATE.SCORED;
+            GameObject cardGO = GetGameObjectFromCard(c);
+            cardGO.SetActive(false);
+        }
+
+        CurrentPlayer = trickWinner;
     }
 
     public void NextPlayer()
     {
-        if(currentHand == Players.Length - 1)
-        {
-            NextTurn();
-        }
-
         CurrentPlayer = (CurrentPlayer + 1) % Players.Length;
-        currentHand++;
+        CurrentPlaceInTrick++;
 
-        Debug.Log("NextPlayer()::" + Players[CurrentPlayer].PlayerName);
+        if (CurrentPlaceInTrick == Players.Length + 1)
+        {
+            NextTrick();
+        }
+        else
+        {
+            Players[CurrentPlayer].GetLegalMoves(firstTrick, heartsBroken, startingSuit, CurrentPlaceInTrick);
+        }
     }
 
     void SortPlayerCards()
@@ -113,7 +167,7 @@ public class GameManager : MonoBehaviour {
     {
         GameObject nextCard;
         int cardIndex = 0;
-        int cardsPerPlayer = NumberOfCards / Players.Length;
+        int cardsPerPlayer = shuffledCards.Length / Players.Length;
         SpriteRenderer sr;
 
         for (int p = 0; p < Players.Length; p++)
