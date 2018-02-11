@@ -11,6 +11,15 @@ public class GameManager : MonoBehaviour {
     void Start() {
         GameObjectToCard = new Dictionary<GameObject, Card>();
         CardToGameObject = new Dictionary<Card, GameObject>();
+
+        PlayerAIs = new AIPlayer[Players.Length];
+
+        PlayerAIs[0] = null;    // Is a human player
+        //PlayerAIs[0] = new AIPlayer();
+        PlayerAIs[1] = new AIPlayer();
+        PlayerAIs[2] = new AIPlayer();
+        PlayerAIs[3] = new AIPlayer();
+
         SetupRound();
 	}
 
@@ -23,6 +32,7 @@ public class GameManager : MonoBehaviour {
     public int currentRound = 0; // rounds are played until a player score reaches or exceded 100
 
     public Player[] Players;
+    AIPlayer[] PlayerAIs;
 
     public enum GAME_STATE{ SWAPPING, PICKING, AI_CALCULATING, SCORING};
     public GAME_STATE GameState = GAME_STATE.PICKING;
@@ -42,6 +52,7 @@ public class GameManager : MonoBehaviour {
 
     void SetupRound()
     {
+        GameState = GAME_STATE.PICKING;
         ShuffleCards(Cards);
         DealCards();
         SortPlayerCards();
@@ -65,6 +76,10 @@ public class GameManager : MonoBehaviour {
             }
         }
         Debug.Log("Starting Player: " + Players[CurrentPlayer].PlayerName);
+        if (PlayerAIs[CurrentPlayer] != null)
+        {
+            PlayerAIs[CurrentPlayer].DoAI();
+        }
     }
 
     // next trick is called 13 times before a new hand is dealt
@@ -75,6 +90,10 @@ public class GameManager : MonoBehaviour {
         firstTrick = false;
         CurrentPlaceInTrick = 1;
         Players[CurrentPlayer].GetLegalMoves(firstTrick, heartsBroken, startingSuit, CurrentPlaceInTrick);
+        if (PlayerAIs[CurrentPlayer] != null)
+        {
+            PlayerAIs[CurrentPlayer].DoAI();
+        }
     }
 
     void ScoreCards()
@@ -115,6 +134,10 @@ public class GameManager : MonoBehaviour {
         }
         else
         {
+            if (PlayerAIs[CurrentPlayer] != null)
+            {
+                PlayerAIs[CurrentPlayer].DoAI();
+            }
             Players[CurrentPlayer].GetLegalMoves(firstTrick, heartsBroken, startingSuit, CurrentPlaceInTrick);
         }
     }

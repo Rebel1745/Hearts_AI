@@ -13,6 +13,7 @@ public class Player {
     public List<Card> ScoredCards = new List<Card>();
     public Vector3 OffsetPerCard;
     public Vector3 SelectedCardOffset;
+    public bool IsAI;
 
     public bool HasCardOfSuit(SUIT suit)
     {
@@ -95,7 +96,6 @@ public class Player {
 
     public Card[] GetLegalMoves(bool firstTrick, bool heartsBroken, SUIT startingSuit, int CurrentPlaceInTrick)
     {
-        Debug.Log(startingSuit.ToString());
         List<Card> legalCards = new List<Card>();
 
         SetLegalMoves(firstTrick, heartsBroken, startingSuit, CurrentPlaceInTrick);

@@ -20,24 +20,7 @@ public class CardManager : MonoBehaviour {
             GameObject cardGO = gm.GetGameObjectFromCard(card);
             if (card.Selected)
             {
-                // if card has already been clicked once, move it to the middle
-                cardGO.transform.position = gm.Players[gm.CurrentPlayer].CardInPlay.transform.position;
-                cardGO.transform.rotation = gm.Players[gm.CurrentPlayer].CardInPlay.transform.rotation;
-                cardGO.GetComponent<SpriteRenderer>().sortingOrder = gm.CurrentPlaceInTrick;
-                card.card_state = Card.CARD_STATE.IN_PLAY;
-                card.Selected = false;
-                if(gm.CurrentPlaceInTrick == 1)
-                {
-                    gm.startingSuit = card.Suit;
-                    gm.startingValue = card.CardNumber;
-                    gm.startingPlayer = card.PlayerId;
-                }
-                gm.trickCards[gm.CurrentPlaceInTrick - 1] = card;
-                if(card.Suit == SUIT.HEARTS)
-                {
-                    gm.heartsBroken = true;
-                }
-                gm.NextPlayer();
+                PlayCard(card);
             }
             else
             {
@@ -57,12 +40,27 @@ public class CardManager : MonoBehaviour {
         }
     }
 
-    public Card[] GetPossibleCards()
+    public void PlayCard(Card card)
     {
-        Card[] playersCards = gm.Players[gm.CurrentPlayer].Cards;
-
-        List<Card> possibleCards = new List<Card>();
-
-        return possibleCards.ToArray();
+        Debug.Log(card.Name);
+        GameObject cardGO = gm.GetGameObjectFromCard(card);
+        // if card has already been clicked once, move it to the middle
+        cardGO.transform.position = gm.Players[gm.CurrentPlayer].CardInPlay.transform.position;
+        cardGO.transform.rotation = gm.Players[gm.CurrentPlayer].CardInPlay.transform.rotation;
+        cardGO.GetComponent<SpriteRenderer>().sortingOrder = gm.CurrentPlaceInTrick;
+        card.card_state = Card.CARD_STATE.IN_PLAY;
+        card.Selected = false;
+        if (gm.CurrentPlaceInTrick == 1)
+        {
+            gm.startingSuit = card.Suit;
+            gm.startingValue = card.CardNumber;
+            gm.startingPlayer = card.PlayerId;
+        }
+        gm.trickCards[gm.CurrentPlaceInTrick - 1] = card;
+        if (card.Suit == SUIT.HEARTS)
+        {
+            gm.heartsBroken = true;
+        }
+        gm.NextPlayer();
     }
 }
