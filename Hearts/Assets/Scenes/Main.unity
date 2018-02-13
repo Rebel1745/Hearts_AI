@@ -2583,7 +2583,7 @@ MonoBehaviour:
   NextRoundButton: {fileID: 1696414813}
   PlayAgainButton: {fileID: 1722025481}
   ExitButton: {fileID: 29851848}
-  waitBetweenRounds: 0.5
+  waitBetweenRounds: 2
   waitBetweenGames: 5
 --- !u!114 &1510869847
 MonoBehaviour:

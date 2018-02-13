@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+        //PlayerPrefs.DeleteAll();
         GameObjectToCard = new Dictionary<GameObject, Card>();
         CardToGameObject = new Dictionary<Card, GameObject>();
 

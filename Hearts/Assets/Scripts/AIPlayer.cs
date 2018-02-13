@@ -35,10 +35,10 @@ public class AIPlayer {
 
         if (legalCards == null || legalCards.Length == 0)
         {
-            // We have no legal moves.  How did we get here?
-            // We might still be in a delayed coroutine somewhere. Let's not freak out.
-            Debug.LogWarning("No Legal Cards");
-            return;
+            // if we get no legal moves, try it again but with hearts broken
+            // there is an unlikely case where all non-heart cards are played and the player only has hearts left and they are not yet broken
+            Debug.LogWarning("No legal moves, trying again with hearts broken");
+            legalCards = gm.Players[gm.CurrentPlayer].GetLegalMoves(gm.firstTrick, true, gm.startingSuit, gm.CurrentPlaceInTrick);
         }
 
         // BasicAI simply picks a legal move at random
