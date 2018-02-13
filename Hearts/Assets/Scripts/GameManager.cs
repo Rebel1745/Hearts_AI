@@ -14,11 +14,14 @@ public class GameManager : MonoBehaviour {
 
         PlayerAIs = new AIPlayer[Players.Length];
 
-        PlayerAIs[0] = null;    // Is a human player
-        //PlayerAIs[0] = new AIPlayer();
+        //PlayerAIs[0] = null;    // Is a human player
+        PlayerAIs[0] = new AIPlayer();
         PlayerAIs[1] = new AIPlayer();
         PlayerAIs[2] = new AIPlayer();
         PlayerAIs[3] = new AIPlayer();
+
+        scoreboard = GameObject.FindObjectOfType<Scoreboard>();
+        scoreboard.HideScoreboard();
 
         SetupRound();
 	}
@@ -31,8 +34,10 @@ public class GameManager : MonoBehaviour {
     public int currentHand = 0; // each set of 13 cards is called a hand
     public int currentRound = 0; // rounds are played until a player score reaches or exceded 100
 
+    public float timeBeforeScoring = 1f;
+
     public Player[] Players;
-    AIPlayer[] PlayerAIs;
+    public AIPlayer[] PlayerAIs;
 
     public enum GAME_STATE{ SWAPPING, PICKING, AI_CALCULATING, SCORING};
     public GAME_STATE GameState = GAME_STATE.PICKING;
@@ -50,7 +55,22 @@ public class GameManager : MonoBehaviour {
     // whether 1st, 2nd, 3rd or 4th card to be placed
     public int CurrentPlaceInTrick = 1;
 
-    void SetupRound()
+    Scoreboard scoreboard;
+
+    void DestroyCurrentCards()
+    {
+        // Destroys the gameObjects of the current cards
+        // TODO: reuse the cards already created rather than destroy and recreate
+        if(CardHolder.childCount > 0)
+        {
+            foreach(Transform go in CardHolder)
+            {
+                Destroy(go.gameObject);
+            }
+        }
+    }
+
+    public void SetupRound()
     {
         GameState = GAME_STATE.PICKING;
         ShuffleCards(Cards);
@@ -75,29 +95,43 @@ public class GameManager : MonoBehaviour {
                 c.isLegal = true;
             }
         }
-        Debug.Log("Starting Player: " + Players[CurrentPlayer].PlayerName);
+        //Debug.Log("Starting Player: " + Players[CurrentPlayer].PlayerName);
         if (PlayerAIs[CurrentPlayer] != null)
         {
             PlayerAIs[CurrentPlayer].DoAI();
+        }
+        else
+        {
+            Players[CurrentPlayer].GetLegalMoves(firstTrick, heartsBroken, startingSuit, CurrentPlaceInTrick);
         }
     }
 
     // next trick is called 13 times before a new hand is dealt
     void NextTrick()
     {
-        ScoreCards();
         currentTrick++;
+
+        if(currentTrick == 13)
+        {
+            scoreboard.ShowScoreboard();
+            return;
+        }
         firstTrick = false;
         CurrentPlaceInTrick = 1;
-        Players[CurrentPlayer].GetLegalMoves(firstTrick, heartsBroken, startingSuit, CurrentPlaceInTrick);
         if (PlayerAIs[CurrentPlayer] != null)
         {
             PlayerAIs[CurrentPlayer].DoAI();
         }
+        else
+        {
+            Players[CurrentPlayer].GetLegalMoves(firstTrick, heartsBroken, startingSuit, CurrentPlaceInTrick);
+        }
     }
 
-    void ScoreCards()
+    IEnumerator ScoreCards()
     {
+        yield return new WaitForSeconds(timeBeforeScoring);
+
         int trickWinner = startingPlayer;
         int currentHighestCard = startingValue;
 
@@ -110,7 +144,7 @@ public class GameManager : MonoBehaviour {
             }
         }
 
-        Debug.Log("Trick Won by: " + Players[trickWinner].PlayerName);
+        //Debug.Log("Trick Won by: " + Players[trickWinner].PlayerName);
         foreach (Card c in trickCards)
         {
             Players[trickWinner].ScoredCards.Add(c);
@@ -121,6 +155,7 @@ public class GameManager : MonoBehaviour {
         }
 
         CurrentPlayer = trickWinner;
+        NextTrick();
     }
 
     public void NextPlayer()
@@ -130,7 +165,7 @@ public class GameManager : MonoBehaviour {
 
         if (CurrentPlaceInTrick == Players.Length + 1)
         {
-            NextTrick();
+            StartCoroutine("ScoreCards");
         }
         else
         {
@@ -138,7 +173,10 @@ public class GameManager : MonoBehaviour {
             {
                 PlayerAIs[CurrentPlayer].DoAI();
             }
-            Players[CurrentPlayer].GetLegalMoves(firstTrick, heartsBroken, startingSuit, CurrentPlaceInTrick);
+            else
+            {
+                Players[CurrentPlayer].GetLegalMoves(firstTrick, heartsBroken, startingSuit, CurrentPlaceInTrick);
+            }            
         }
     }
 
@@ -158,6 +196,8 @@ public class GameManager : MonoBehaviour {
 
         for (int p = 0; p < Players.Length; p++)
         {
+            // after every hand, the list of scored cards is blanked
+            Players[p].ScoredCards = new List<Card>();
             for (int c = 0; c < Players[p].Cards.Length; c++)
             {
                 nextCard = GetGameObjectFromCard(Players[p].Cards[c]);
@@ -192,6 +232,8 @@ public class GameManager : MonoBehaviour {
         int cardIndex = 0;
         int cardsPerPlayer = shuffledCards.Length / Players.Length;
         SpriteRenderer sr;
+        
+        DestroyCurrentCards();
 
         for (int p = 0; p < Players.Length; p++)
         {
@@ -211,6 +253,7 @@ public class GameManager : MonoBehaviour {
                 CardController cc = nextCard.AddComponent<CardController>();
                 cc.card = shuffledCards[cardIndex];
                 cc.card.PlayerId = p;
+                cc.card.card_state = Card.CARD_STATE.IN_HAND;
 
                 // Add card details to individual player
                 Players[p].Cards[c] = Cards[cardIndex];
@@ -235,11 +278,12 @@ public class GameManager : MonoBehaviour {
 
     public GameObject GetGameObjectFromCard(Card card)
     {
+        GameObject cardGO = null;
         if (CardToGameObject.ContainsKey(card))
         {
-            return CardToGameObject[card];
+            cardGO = CardToGameObject[card];
         }
 
-        return null;
+        return cardGO;
     }
 }

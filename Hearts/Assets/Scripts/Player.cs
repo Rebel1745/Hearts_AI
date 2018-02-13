@@ -38,20 +38,30 @@ public class Player {
             // during the first trick, hearts cannot be played
             if(firstTrick)
             {
-                // if player has clubs, only clubs can be played
-                if (HasCardOfSuit(SUIT.CLUBS))
+                if(CurrentPlaceInTrick == 1)
                 {
-                    if(c.Suit == SUIT.CLUBS)
+                    if (c.IsTwoOfClubs())
                     {
                         c.SetLegality(true);
                     }
                 }
                 else
                 {
-                    // if player doesn't have clubs, all cards apart from hearts and QoS can be played
-                    if (c.Suit != SUIT.HEARTS && !c.IsQueenOfSpades())
+                    // if player has clubs, only clubs can be played
+                    if (HasCardOfSuit(SUIT.CLUBS))
                     {
-                        c.SetLegality(true);
+                        if (c.Suit == SUIT.CLUBS)
+                        {
+                            c.SetLegality(true);
+                        }
+                    }
+                    else
+                    {
+                        // if player doesn't have clubs, all cards apart from hearts and QoS can be played
+                        if (c.Suit != SUIT.HEARTS && !c.IsQueenOfSpades())
+                        {
+                            c.SetLegality(true);
+                        }
                     }
                 }
             }
@@ -61,13 +71,13 @@ public class Player {
                 // first player to play a card can play any card (not hearts if hearts not broken)
                 if(CurrentPlaceInTrick == 1)
                 {
-                    if (heartsBroken)
+                    if (heartsBroken && c.card_state == Card.CARD_STATE.IN_HAND)
                     {
                         c.SetLegality(true);
                     }
                     else
                     {
-                        if(c.Suit != SUIT.HEARTS)
+                        if(c.Suit != SUIT.HEARTS && c.card_state == Card.CARD_STATE.IN_HAND)
                         {
                             c.SetLegality(true);
                         }
@@ -79,7 +89,7 @@ public class Player {
                     // see if player can match suit already played
                     if (HasCardOfSuit(startingSuit))
                     {
-                        if(c.Suit == startingSuit)
+                        if(c.Suit == startingSuit && c.card_state == Card.CARD_STATE.IN_HAND)
                         {
                             c.SetLegality(true);
                         }
@@ -87,7 +97,8 @@ public class Player {
                     // doesnt have a card of the starting suit; play anything
                     else 
                     {
-                        c.SetLegality(true);
+                        if (c.card_state == Card.CARD_STATE.IN_HAND)
+                            c.SetLegality(true);
                     }
                 }
             }

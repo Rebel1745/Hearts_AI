@@ -40,8 +40,6 @@ public class Card {
 
     public void SetLegality(bool legal)
     {
-        //int playerNo = PlayerId + 1;
-        //Debug.Log("Player " + playerNo + ". Card: " + Name + ". Legal: " + legal);
         isLegal = legal;
     }
 }

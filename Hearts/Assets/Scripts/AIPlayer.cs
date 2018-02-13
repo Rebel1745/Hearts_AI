@@ -13,9 +13,10 @@ public class AIPlayer {
     GameManager gm;
     CardManager cm;
 
+    Card pickedCard;
+
     virtual public void DoAI()
     {
-        Debug.Log("DoAI()");
         // Do the thing for the current stage we're in
 
         if (gm.GameState == GameManager.GAME_STATE.PICKING)
@@ -30,22 +31,20 @@ public class AIPlayer {
     virtual protected void DoClick()
     {
         // Pick a card to move, then "click" it.
-
-
         Card[] legalCards = gm.Players[gm.CurrentPlayer].GetLegalMoves(gm.firstTrick, gm.heartsBroken, gm.startingSuit, gm.CurrentPlaceInTrick);
 
         if (legalCards == null || legalCards.Length == 0)
         {
             // We have no legal moves.  How did we get here?
             // We might still be in a delayed coroutine somewhere. Let's not freak out.
+            Debug.LogWarning("No Legal Cards");
             return;
         }
 
         // BasicAI simply picks a legal move at random
+        pickedCard = PickCardToMove(legalCards);
 
-        Card pickedCard = PickCardToMove(legalCards);
-
-        cm.PlayCard(pickedCard);
+        cm.PlayPickedCardCoroutine(pickedCard);
     }
 
     virtual protected Card PickCardToMove(Card[] legalCards)

@@ -4,14 +4,21 @@ using UnityEngine;
 
 public class CardManager : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    void Awake()
+    {
         gm = GameObject.FindObjectOfType<GameManager>();
-	}
-
-    private Card previousCard = null;
+        if (gm == null)
+        {
+            Debug.LogError("NO GAME MANAGER");
+        }
+    }
 
     GameManager gm;
+
+    Card previousCard = null;
+    Card pickedCard;
+
+    public float timeBeforeCardPlayed = 0.25f;
 
     public void OnCardSelected(Card card)
     {
@@ -40,9 +47,20 @@ public class CardManager : MonoBehaviour {
         }
     }
 
+    public void PlayPickedCardCoroutine(Card card)
+    {
+        pickedCard = card;
+        StartCoroutine("PlayPickedCard");
+    }
+
+    IEnumerator PlayPickedCard()
+    {
+        yield return new WaitForSeconds(timeBeforeCardPlayed);
+
+        PlayCard(pickedCard);
+    }
     public void PlayCard(Card card)
     {
-        Debug.Log(card.Name);
         GameObject cardGO = gm.GetGameObjectFromCard(card);
         // if card has already been clicked once, move it to the middle
         cardGO.transform.position = gm.Players[gm.CurrentPlayer].CardInPlay.transform.position;
